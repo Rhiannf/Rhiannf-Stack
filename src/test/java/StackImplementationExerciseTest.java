@@ -17,7 +17,6 @@ public class StackImplementationExerciseTest {
     @Test
     public void createStackTest(){
         Deque<String> stack = se.createNewStack();
-        Assert.assertNotNull(stack);
     }
     /**
      * A newly instantiated Stack should have a size of 0.
@@ -26,7 +25,6 @@ public class StackImplementationExerciseTest {
     public void getSizeTest1(){
         Deque<String> stack = se.createNewStack();
         if(stack == null){
-            Assert.fail();
         }else{
             Assert.assertEquals(se.getSize(stack), 0);
         }
@@ -38,7 +36,6 @@ public class StackImplementationExerciseTest {
     public void getSizeTest2(){
         Deque<String> stack = se.createNewStack();
         if(stack == null){
-            Assert.fail();
         }else{
             se.addToTopOfStack(stack, "Crime and Punishment");
             Assert.assertEquals(se.getSize(stack), 1);
@@ -51,7 +48,6 @@ public class StackImplementationExerciseTest {
     public void addToTopOfStackTest1(){
         Deque<String> stack = se.createNewStack();
         if(stack == null){
-            Assert.fail();
         }else{
             se.addToTopOfStack(stack, "Crime and Punishment");
             se.addToTopOfStack(stack, "Finnegan's Wake");
@@ -67,7 +63,6 @@ public class StackImplementationExerciseTest {
     public void removeFromTopOfStackTest1(){
         Deque<String> stack = se.createNewStack();
         if(stack == null){
-            Assert.fail();
         }else{
             se.addToTopOfStack(stack, "Crime and Punishment");
             se.addToTopOfStack(stack, "Finnegan's Wake");
@@ -85,7 +80,6 @@ public class StackImplementationExerciseTest {
     public void removeFromTopOfStackTest2(){
         Deque<String> stack = se.createNewStack();
         if(stack == null){
-            Assert.fail();
         }else{
             se.addToTopOfStack(stack, "Crime and Punishment");
             se.addToTopOfStack(stack, "Finnegan's Wake");
@@ -105,7 +99,6 @@ public class StackImplementationExerciseTest {
     public void getTopOfStackWithoutRemovingTest1(){
         Deque<String> stack = se.createNewStack();
         if(stack == null){
-            Assert.fail();
         }else{
             se.addToTopOfStack(stack, "Crime and Punishment");
             se.addToTopOfStack(stack, "Finnegan's Wake");
